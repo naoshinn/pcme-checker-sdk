@@ -58,6 +58,13 @@ impl Summary {
             path: path.into(),
         }
     }
+
+    pub fn stop(path: impl Into<String>) -> Self {
+        Self {
+            severity: Severity::Stop,
+            path: path.into(),
+        }
+    }
 }
 
 impl fmt::Display for Summary {
@@ -119,10 +126,6 @@ impl CheckReport {
             summary,
             details: Vec::new(),
         }
-    }
-
-    pub fn from_diagnostic_with_details(summary: Summary, details: Vec<Diagnostic>) -> Self {
-        Self { summary, details }
     }
 }
 
