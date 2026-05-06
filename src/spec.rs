@@ -1,6 +1,6 @@
 use std::path::{Path, PathBuf};
 
-use crate::builder::{CheckReport, CheckRule, Diagnostic, Summary, runner::run_rule};
+use crate::{CheckReport, CheckRule, Diagnostic, Summary, runner::run_rule};
 
 pub struct CheckSpec {
     pub id: String,

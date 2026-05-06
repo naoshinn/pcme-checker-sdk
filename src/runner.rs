@@ -1,6 +1,6 @@
 use std::path::Path;
 
-use crate::builder::{CheckRule, Diagnostic};
+use crate::{CheckRule, Diagnostic};
 
 pub fn run_rule(rule: &CheckRule, path: &Path) -> Diagnostic {
     match rule {

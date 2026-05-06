@@ -1,6 +1,6 @@
 use std::path::PathBuf;
 
-use crate::builder::{CheckRule, CheckSpec};
+use crate::{CheckRule, CheckSpec};
 
 pub struct CheckerBuilder {
     id: String,
